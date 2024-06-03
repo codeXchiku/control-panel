@@ -18,12 +18,12 @@ export default function App() {
     {/* <PreFlight/> */}
     {/* <Quick/> */}
     {/* <AuxFunction/> */}
-    {/* <Scripts/> */}
+    <Scripts/>
     {/* <DataFlashLogs/> */}
     {/* <TelemetryLogs/> */}
     {/* <PayLoad/> */}
     {/* <Servo/> */}
-    <Actions/>
+    {/* <Actions/> */}
     </>
   )
 }
