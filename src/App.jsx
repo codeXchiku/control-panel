@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Actions from "./pages/Actions";
 import AuxFunction from "./pages/AuxFunction";
 import DataFlashLogs from "./pages/DataFlashLogs";
+import Gauges from "./pages/Gauges";
 import PayLoad from "./pages/PayLoad";
 import PreFlight from "./pages/PreFlight";
 import Quick from "./pages/Quick";
@@ -18,12 +19,13 @@ export default function App() {
     {/* <PreFlight/> */}
     {/* <Quick/> */}
     {/* <AuxFunction/> */}
-    <Scripts/>
+    {/* <Scripts/> */}
     {/* <DataFlashLogs/> */}
     {/* <TelemetryLogs/> */}
     {/* <PayLoad/> */}
     {/* <Servo/> */}
     {/* <Actions/> */}
+    {/* <Gauges/> */}
     </>
   )
 }
