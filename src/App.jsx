@@ -23,11 +23,11 @@ export default function App() {
     {/* <Scripts/> */}
     {/* <DataFlashLogs/> */}
     {/* <TelemetryLogs/> */}
-    {/* <PayLoad/> */}
+    <PayLoad/>
     {/* <Servo/> */}
     {/* <Actions/> */}
     {/* <Gauges/> */}
-    <DroneID/>
+    {/* <DroneID/> */}
     </>
   )
 }

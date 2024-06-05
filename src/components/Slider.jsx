@@ -10,7 +10,7 @@ const Slider = () => {
     <>
       <div className="w-36">
         <input type="range" min={0} max="100" className="range" step="5" value={value} onChange={handleChange} />
-        <div className="w-full flex justify-between text-xs px-3.5  ">
+        <div className="w-full flex justify-between text-xs px-3.5 ">
           <span>|</span>
           <span>|</span>
           <span>|</span>
