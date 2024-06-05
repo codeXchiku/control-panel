@@ -1,10 +1,87 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DroneID = () => {
+  const [content, setContent] = useState(null);
 
-  const content1 = ()=>{
-    <p className="bg-red-500">chiku is a good boy</p>
-  }
+  const handleButtonClick = (buttonId) => {
+    // Set content based on button ID
+    switch (buttonId) {
+      case 'button1':
+        setContent(
+          <div>
+        <div className="flex justify-between mt-1 mx-1">
+          <p >RID Armed Status</p>
+          <input type="text" className="bg-gray-400"/>
+        </div>
+        <textarea className="ml-1 mt-2" name="message" rows="8" cols="60"></textarea>
+         </div>
+        );
+        break;
+      case 'button2':
+        setContent(
+        <div>
+          <div className="flex justify-between mt-4 ml-3 mr-4">
+            <p>UAS ID</p>
+            <input className="bg-gray-400 w-56 " type="text" />
+          </div>
+          <div className="flex justify-between mt-4 ml-3 mr-4">
+            <p>UAS ID Type</p>
+            <select className="bg-gray-400 w-56 " name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+          <div className="flex justify-between mt-4 ml-3 mr-4">
+          <p>UA Type</p>
+            <select className="bg-gray-400 w-56" name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+        </div>
+      );
+        break;
+      case 'button3':
+        setContent(
+          <div>
+
+            <div className="flex justify-between mt-4 ml-3 mr-4">
+            <p>UAS ID</p>
+            <input className="bg-gray-400 w-56 " type="text" />
+          </div>
+
+          <div className="flex justify-between mt-4 ml-3 mr-4 mb-2">
+            <p>UAS ID Type</p>
+            <select className="bg-gray-400 w-56 " name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+
+          <p className="ml-3">self Id:</p>
+
+          <div className="flex justify-between mt-2 ml-3 mr-4">
+            <p>UAS ID</p>
+            <input className="bg-gray-400 w-56 " type="text" />
+          </div>
+
+          <div className="flex justify-between mt-4 ml-3 mr-4">
+            <p>UAS ID Type</p>
+            <select className="bg-gray-400 w-56 " name="" id="">
+              <option value="">1</option>
+              <option value="">2</option>
+            </select>
+          </div>
+
+          </div>
+        );
+        break;
+      default:
+        setContent(null);
+    }
+  };
+
+
   return (
     <>
       <div>
@@ -91,11 +168,11 @@ const DroneID = () => {
 
         <div>
           <div className="flex ml-3">
-            <button className="bg-lime-400 mr-1" onClick={content1}>chiku</button>
-            <button className="bg-lime-400 mr-1">biku</button>
-            <button className="bg-lime-400 mr-1">raja</button>
+            <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button1')}>Status</button>
+            <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button2')}>UAS ID</button>
+            <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button3')}>Operations</button>
           </div>
-          <div className="ml-3 border border-blue-400"></div>
+          <div className="ml-3 border border-blue-400 w-4/12 h-52">{content}</div>
         </div>
       </div>
     </>
