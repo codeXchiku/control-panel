@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Actions from "./pages/Actions";
 import AuxFunction from "./pages/AuxFunction";
 import DataFlashLogs from "./pages/DataFlashLogs";
+import DroneID from "./pages/DroneID";
 import Gauges from "./pages/Gauges";
 import PayLoad from "./pages/PayLoad";
 import PreFlight from "./pages/PreFlight";
@@ -26,6 +27,7 @@ export default function App() {
     {/* <Servo/> */}
     {/* <Actions/> */}
     {/* <Gauges/> */}
+    <DroneID/>
     </>
   )
 }
