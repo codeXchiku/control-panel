@@ -4,7 +4,7 @@ import Slider from "../components/Slider";
 const TelemetryLogs = () => {
   return (
     <>
-      <div className="flex">
+      <div className="flex h-56">
         <div className="grid mr-6 w-24 h-36">
           <button className="bg-green-400 mb-2">Load Log</button>
 
@@ -13,7 +13,7 @@ const TelemetryLogs = () => {
           <button className="bg-green-400 text-sm">Tlog {'>'} Kml .or Graph</button>
         </div>
 
-        <div className="grid w-32 text-center mt-10 ">
+        <div className="grid w-32 text-center mt-10 h-36 ">
           <div className="mb-3">
             <Slider />
           </div>
@@ -31,7 +31,7 @@ const TelemetryLogs = () => {
 
         <div className="grid ml-6">
           <p className="mt-5">0.00%</p>
-          <p className="mb-6">x 1.0</p>
+          <p className="mb-16">x 1.0</p>
         </div>
       </div>
     </>

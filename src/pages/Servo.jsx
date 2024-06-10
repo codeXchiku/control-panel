@@ -3,7 +3,7 @@ import React from 'react'
 const Servo = () => {
   return (
     <>
-    <div>
+    <div className='ml-3 h-56'>
         <div className='flex items-center mb-3'>
             <button className='mr-2 bg-green-400 px-1'>Low</button>
             <button className='mr-2 bg-green-400 px-1'>Mid</button>

@@ -1,54 +1,58 @@
-import React from 'react'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <>
-    <nav className='flex items-center text-center bg-white justify-between text-black shrink-0 flex-none'>
-    <div className=" py-3 w-14 border ">
-    Quick
-  </div>
-  <div className=" w-14 py-3 border ">
-    Action
-  </div>
-  <div className=" w-14 py-3 border ">
-    Message
-  </div>
-  <div className=" w-14 py-3 border ">
-    PreFlight
-  </div>
-  <div className=" w-14 py-3 border ">
-    Gauges
-  </div>
-  <div className=" w-14 py-3 border ">
-    Drone ID
-  </div>
-  <div className=" w-14 py-3 border ">
-    Transponder
-  </div>
-  <div className=" w-14 py-3 border ">
-    Status
-  </div>
-  <div className=" w-14 py-3 border ">
-    Servo/Relay
-  </div>
-  <div className=" w-14 py-3 border ">
-    Aux Function
-  </div>
-  <div className=" w-14 py-3 border ">
-    Scripts
-  </div>
-  <div className=" w-14 py-3 border ">
-    Payload Control
-  </div>
-  <div className=" w-14 py-3 border ">
-    Telemetry Logs
-  </div>
-  <div className=" w-14 py-3 border ">
-    Dataflash Logs
-  </div>
-    </nav>
+      <nav className="bg-white overflow-x-auto h-14 text-black
+      ">
+        <div className="flex items-center space-x-2">
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/">Quick</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/Actions">Action</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/Message">Message</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/PreFlight">PreFlight</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/Gauges">Gauges</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2" to="/DroneID">Drone ID</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/Transponder">Transponder</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/Status">Status</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/Servo">Servo/Relay</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2" to="/AuxFunction">Aux Function</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2 py-1" to="/Scripts">Scripts</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2" to="/Payload">Payload Control</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2" to="/TelemetryLogs">Telemetry Logs</NavLink>
+          
+          
+            <NavLink className="focus:border-2 border-black text-xs px-2" to="/DataFlashLogs">Dataflash Logs</NavLink>
+          
+        </div>
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

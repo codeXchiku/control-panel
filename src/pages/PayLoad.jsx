@@ -4,7 +4,7 @@ import Slider from "../components/Slider";
 const PayLoad = () => {
   return (
     <>
-      <div className="flex">
+      <div className="flex h-56 mb-2">
         <div className="grid ">
           <fieldset className="border border-red-500 ml-3 h-40">
             <legend className="ml-2">Tilt</legend>

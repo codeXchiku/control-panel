@@ -3,7 +3,7 @@ import React from 'react'
 const Scripts = () => {
   return (
     <>
-    <div className='ml-4'>
+    <div className='ml-4 h-56'>
       <p>Script Status:No Script Running</p>
       <p>Selected Script:None</p>
       <div className='flex mb-4'>

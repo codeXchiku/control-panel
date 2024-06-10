@@ -21,7 +21,8 @@ import {
 const Gauges = () => {
   return (
     <>
-      <div className="flex flex-wrap">
+    
+      <div className="flex flex-wrap h-56">
         <div >
           <Variometer vario={(Math.random() - 0.5) * 4000}  />
         </div>

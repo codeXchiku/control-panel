@@ -9,11 +9,11 @@ const DroneID = () => {
       case 'button1':
         setContent(
           <div>
-        <div className="flex justify-between mt-1 mx-1">
+        <div className="flex justify-between mt-1 mx-4">
           <p >RID Armed Status</p>
           <input type="text" className="bg-gray-400"/>
         </div>
-        <textarea className="ml-1 mt-2" name="message" rows="8" cols="60"></textarea>
+        <textarea className="ml-1 mt-2 text-black" name="message" rows="7" cols="60"></textarea>
          </div>
         );
         break;
@@ -44,7 +44,6 @@ const DroneID = () => {
       case 'button3':
         setContent(
           <div>
-
             <div className="flex justify-between mt-4 ml-3 mr-4">
             <p>UAS ID</p>
             <input className="bg-gray-400 w-56 " type="text" />
@@ -84,8 +83,8 @@ const DroneID = () => {
 
   return (
     <>
-      <div>
-        <fieldset className="border border-red-500 h-32 w-4/12 ml-3">
+      <div className="h-56 mb-2">
+        <fieldset className="border border-red-500 h-28 w-30 mx-4">
           <legend className="ml-3">GCS GPS</legend>
           <div className="flex">
             <select
@@ -104,18 +103,20 @@ const DroneID = () => {
               <option value="">1</option>
               <option value="">2</option>
             </select>
-            <button className="bg-lime-500 h-8 px-1 mt-3">
+            <button className="bg-lime-500 h-8 px-1 mt-3 text-xs">
               Connect Base GPS
             </button>
           </div>
-          <div className="flex ml-2 justify-end">
-            <p className="mr-60">Not Yet Started</p>
+          <div className="flex ml-4 justify-between">
+            <p className="">Not Yet Started</p>
+            <div className="flex mr-28">
             <input type="checkbox" name="" id="" className="mr-1" />
-            <p className="mr-20">Auto</p>
+            <p className="">Auto</p>
+            </div>
           </div>
         </fieldset>
 
-        <div className="flex h-24 w-4/12 ml-3 justify-between mt-3">
+        <div className="flex h-24 w-30 mx-4 justify-between mt-3">
           <div className="ml-3">
             <ul>
               <li className="flex items-center text-lg">
@@ -172,7 +173,7 @@ const DroneID = () => {
             <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button2')}>UAS ID</button>
             <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button3')}>Operations</button>
           </div>
-          <div className="ml-3 border border-blue-400 w-4/12 h-52">{content}</div>
+          <div className="mx-3 border border-blue-400 w-30 h-52">{content}</div>
         </div>
       </div>
     </>
