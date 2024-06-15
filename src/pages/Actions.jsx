@@ -1,116 +1,119 @@
 import React from "react";
+import Actioncss from '../assets/Action.module.css'
 
 const Actions = () => {
   return (
     <>
-      <div className="h-56">
-        <div className="flex h-10 mb-2">
+      <div style={{height: '14rem'}}>
+        <div style={{ display:'flex', height:'2.5rem' ,marginBottom:'0.5rem'}}>
+
           <select
-            className="bg-gray-600 text-white mr-2 py-2 px-5"
+            className={Actioncss.selectbox}
             name=""
             id=""
           >
             <option value="">dpgle</option>
             <option value="">ofdpbi</option>
           </select>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Do Action</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Auto</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">
+
+          <button className={Actioncss.actionbtn}>Do Action</button>
+          <button className={Actioncss.actionbtn}>Auto</button>
+          <button className={Actioncss.actionbtn}>
             Set Home Alt
           </button>
-          <div className="flex flex-wrap">
+          <div style={{display:'flex',flexWrap:'wrap'}}>
             <input
               type="number"
               value={"1200"}
               id=""
-              className="w-11 h-6 text-xs text-white bg-gray-600"
+              className={Actioncss.inputbox}
             />
-            <button className="bg-lime-500 h-6 text-xs px-2">
+            <button className={Actioncss.btn1}>
               Change Speed
             </button>
           </div>
         </div>
 
-        <div className="flex h-10 mb-2">
+        <div style={{display:'flex',height:'2.5rem',marginBottom:'0.5rem'}}>
           <select
-            className="bg-gray-600 text-white mr-2 py-2 px-5"
+            className={Actioncss.selectbox}
             name=""
             id=""
           >
             <option value="">dpgle</option>
             <option value="">ofdpbi</option>
           </select>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Do Action</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Auto</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">
+          <button className={Actioncss.actionbtn}>Do Action</button>
+          <button className={Actioncss.actionbtn}>Auto</button>
+          <button className={Actioncss.actionbtn}>
             Set Home Alt
           </button>
-          <div className="flex flex-wrap">
+          <div style={{display:'flex',flexWrap:'wrap'}}>
             <input
               type="number"
               value={"1200"}
               id=""
-              className="w-11 h-6 text-xs text-white bg-gray-600"
+              className={Actioncss.inputbox}
             />
-            <button className="bg-lime-500 h-6 text-xs px-2">
+            <button className={Actioncss.btn1}>
               Change Speed
             </button>
           </div>
         </div>
 
-        <div className="flex h-10 mb-2">
+        <div style={{display:'flex',height:'2.5rem',marginBottom:'0.5rem'}}>
           <select
-            className="bg-gray-600 text-white mr-2 py-2 px-5"
+            className={Actioncss.selectbox}
             name=""
             id=""
           >
             <option value="">dpgle</option>
             <option value="">ofdpbi</option>
           </select>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Do Action</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Auto</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">
+          <button className={Actioncss.actionbtn}>Do Action</button>
+          <button className={Actioncss.actionbtn}>Auto</button>
+          <button className={Actioncss.actionbtn}>
             Set Home Alt
           </button>
-          <div className="flex flex-wrap">
+          <div style={{display:'flex',flexWrap:'wrap'}}>
             <input
               type="number"
               value={"1200"}
               id=""
-              className="w-11 h-6 text-xs text-white bg-gray-600"
+              className={Actioncss.inputbox}
             />
-            <button className="bg-lime-500 h-6 text-xs px-2">
+            <button className={Actioncss.btn1}>
               Change Speed
             </button>
           </div>
         </div>
 
-        <div className="flex h-10 mb-2">
+        <div style={{display:'flex',height:'2.5rem',marginBottom:'0.5rem'}}>
           <select
-            className="bg-gray-600 text-white mr-2 py-2 px-5"
+            className={Actioncss.selectbox}
             name=""
             id=""
           >
             <option value="">dpgle</option>
             <option value="">ofdpbi</option>
           </select>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Do Action</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Auto</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">
+          <button className={Actioncss.actionbtn}>Do Action</button>
+          <button className={Actioncss.actionbtn}>Auto</button>
+          <button className={Actioncss.actionbtn}>
             Set Home Alt
           </button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">
+          <button className={Actioncss.actionbtn}>
             Set Home Alt
           </button>
         </div>
 
-        <div className="flex h-10 ml-28">
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Do Action</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">Auto</button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">
+        <div style={{display:'flex',height:'2.5rem',marginLeft:'7rem'}}>
+          <button className={Actioncss.actionbtn}>Do Action</button>
+          <button className={Actioncss.actionbtn}>Auto</button>
+          <button className={Actioncss.actionbtn}>
             Set Home Alt
           </button>
-          <button className="bg-lime-500 mr-2 px-5 text-sm">
+          <button className={Actioncss.actionbtn}>
             Set Home Alt
           </button>
         </div>

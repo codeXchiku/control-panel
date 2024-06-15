@@ -1,0 +1,36 @@
+.selectbox {
+  background-color: rgb(75, 85, 99);
+  color: white;
+  margin-right: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.actionbtn {
+  background-color: rgb(132, 204, 22);
+  margin-right: 0.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem
+}
+
+.btn1{
+    background-color: rgb(132, 204, 22);
+  height: 1.5rem;
+  font-size: 0.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  line-height: 1rem
+}
+
+.inputbox{
+    width: 2.75rem;
+  height: 1.5rem;
+  font-size: 0.75rem;
+  color: white;
+  background-color: rgb(75, 85, 99);
+  line-height: 1rem;
+}

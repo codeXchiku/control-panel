@@ -1,12 +1,13 @@
 import React from "react";
+import Auxcss from '../assets/AuxFunction.module.css'
 
 const AuxFunction = () => {
   return (
     <>
-      <div className="grid h-56">
-        <div className="flex mb-2 ">
+      <div style={{display:'grid',height:'14rem', marginLeft:'0.5rem'}}>
+        <div className={Auxcss.childContainer}>
           <div>
-            <select className="bg-gray-400 mr-2 w-36" name="cars" id="cars">
+            <select className={Auxcss.selectbox} name="cars" id="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -15,20 +16,20 @@ const AuxFunction = () => {
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">low</button>
+            <button className={Auxcss.btn}>low</button>
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">mid</button>
+            <button className={Auxcss.btn}>mid</button>
           </div>
           <div>
-            <button className="bg-green-400 px-2  ease-in-out active:bg-green-500">high</button>
+            <button className={Auxcss.btn2}>high</button>
           </div>
         </div>
 
-        <div className="flex mb-2">
+        <div className={Auxcss.childContainer}>
           <div>
-            <select className="bg-gray-400 mr-2 w-36" name="cars" id="cars">
+            <select className={Auxcss.selectbox} name="cars" id="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -37,20 +38,20 @@ const AuxFunction = () => {
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">low</button>
+            <button className={Auxcss.btn}>low</button>
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">mid</button>
+            <button className={Auxcss.btn}>mid</button>
           </div>
           <div>
-            <button className="bg-green-400 px-2 ease-in-out active:bg-green-500 ">high</button>
+            <button className={Auxcss.btn2}>high</button>
           </div>
         </div>
 
-        <div className="flex mb-2">
+        <div className={Auxcss.childContainer}>
           <div>
-            <select className="bg-gray-400 mr-2 w-36" name="cars" id="cars">
+            <select className={Auxcss.selectbox} name="cars" id="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -59,20 +60,20 @@ const AuxFunction = () => {
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">low</button>
+            <button className={Auxcss.btn}>low</button>
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">mid</button>
+            <button className={Auxcss.btn}>mid</button>
           </div>
           <div>
-            <button className="bg-green-400 px-2 ease-in-out active:bg-green-500 ">high</button>
+            <button className={Auxcss.btn2}>high</button>
           </div>
         </div>
 
-        <div className="flex mb-2">
+        <div className={Auxcss.childContainer}>
           <div>
-            <select className="bg-gray-400 mr-2 w-36" name="cars" id="cars">
+            <select className={Auxcss.selectbox} name="cars" id="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -81,20 +82,20 @@ const AuxFunction = () => {
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">low</button>
+            <button className={Auxcss.btn}>low</button>
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">mid</button>
+            <button className={Auxcss.btn}>mid</button>
           </div>
           <div>
-            <button className="bg-green-400 px-2 ease-in-out active:bg-green-500 ">high</button>
+            <button className={Auxcss.btn2}>high</button>
           </div>
         </div>
 
-        <div className="flex mb-2">
+        <div className={Auxcss.childContainer}>
           <div>
-            <select className="bg-gray-400 mr-2 w-36" name="cars" id="cars">
+            <select className={Auxcss.selectbox} name="cars" id="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -103,20 +104,20 @@ const AuxFunction = () => {
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">low</button>
+            <button className={Auxcss.btn}>low</button>
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">mid</button>
+            <button className={Auxcss.btn}>mid</button>
           </div>
           <div>
-            <button className="bg-green-400 px-2  ease-in-out active:bg-green-500">high</button>
+            <button className={Auxcss.btn2}>high</button>
           </div>
         </div>
 
-        <div className="flex mb-2">
+        <div className={Auxcss.childContainer}>
           <div>
-            <select className="bg-gray-400 mr-2 w-36" name="cars" id="cars">
+            <select className={Auxcss.selectbox} name="cars" id="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -125,20 +126,20 @@ const AuxFunction = () => {
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">low</button>
+            <button className={Auxcss.btn}>low</button>
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">mid</button>
+            <button className={Auxcss.btn}>mid</button>
           </div>
           <div>
-            <button className="bg-green-400 px-2 ease-in-out active:bg-green-500 ">high</button>
+            <button className={Auxcss.btn2}>high</button>
           </div>
         </div>
 
-        <div className="flex mb-2">
+        <div className={Auxcss.childContainer}>
           <div>
-            <select className="bg-gray-400 mr-2 w-36" name="cars" id="cars">
+            <select className={Auxcss.selectbox} name="cars" id="cars">
               <option value="volvo">Volvo</option>
               <option value="saab">Saab</option>
               <option value="mercedes">Mercedes</option>
@@ -147,14 +148,14 @@ const AuxFunction = () => {
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">low</button>
+            <button className={Auxcss.btn}>low</button>
           </div>
 
           <div>
-            <button className="bg-green-400 px-2 mr-2 ease-in-out active:bg-green-500">mid</button>
+            <button className={Auxcss.btn}>mid</button>
           </div>
           <div>
-            <button className="bg-green-400 px-2 ease-in-out active:bg-green-500 ">high</button>
+            <button className={Auxcss.btn2}>high</button>
           </div>
         </div>
       </div>

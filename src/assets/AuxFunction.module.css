@@ -1,0 +1,30 @@
+.selectbox{
+    background-color: rgb(156 163 175);
+    margin-right: 0.5rem;
+    width: 9rem;
+}
+
+.childContainer{
+    display: flex;
+    margin-bottom: 0.5rem;
+    align-items: center;
+}
+
+.btn{
+    background-color: rgb(74 222 128);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+  border-style: none;
+}
+
+.btn2{
+    background-color: rgb(74 222 128);
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-style: none;
+}
+
+button:active{
+    background-color: rgb(34 197 94);
+}

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import dronecss from '../assets/Drone.module.css'
 
 const DroneID = () => {
   const [content, setContent] = useState(null);
@@ -9,31 +10,33 @@ const DroneID = () => {
       case 'button1':
         setContent(
           <div>
-        <div className="flex justify-between mt-1 mx-4">
+        <div className={dronecss.inputcontainerbtn1}>
           <p >RID Armed Status</p>
-          <input type="text" className="bg-gray-400"/>
+          <input type="text" style={{backgroundColor:'rgb(156 163 175)'}}/>
         </div>
-        <textarea className="ml-1 mt-2 text-black" name="message" rows="7" cols="60"></textarea>
+        <textarea className={dronecss.textareabtn1} name="message" rows="7" cols="60"></textarea>
          </div>
         );
         break;
+
+
       case 'button2':
         setContent(
         <div>
-          <div className="flex justify-between mt-4 ml-3 mr-4">
+          <div className={dronecss.inputcontainer}>
             <p>UAS ID</p>
-            <input className="bg-gray-400 w-56 " type="text" />
+            <input className={dronecss.inputbox} type="text" />
           </div>
-          <div className="flex justify-between mt-4 ml-3 mr-4">
+          <div className={dronecss.inputcontainer}>
             <p>UAS ID Type</p>
-            <select className="bg-gray-400 w-56 " name="" id="">
+            <select className={dronecss.inputbox} name="" id="">
               <option value="">1</option>
               <option value="">2</option>
             </select>
           </div>
-          <div className="flex justify-between mt-4 ml-3 mr-4">
+          <div className={dronecss.inputcontainer}>
           <p>UA Type</p>
-            <select className="bg-gray-400 w-56" name="" id="">
+            <select className={dronecss.inputbox} name="" id="">
               <option value="">1</option>
               <option value="">2</option>
             </select>
@@ -41,32 +44,33 @@ const DroneID = () => {
         </div>
       );
         break;
+
       case 'button3':
         setContent(
           <div>
-            <div className="flex justify-between mt-4 ml-3 mr-4">
+            <div className={dronecss.inputcontainer}>
             <p>UAS ID</p>
-            <input className="bg-gray-400 w-56 " type="text" />
+            <input className={dronecss.inputbox} type="text" />
           </div>
 
-          <div className="flex justify-between mt-4 ml-3 mr-4 mb-2">
+          <div className={dronecss.selectcontainer1btn3}>
             <p>UAS ID Type</p>
-            <select className="bg-gray-400 w-56 " name="" id="">
+            <select className={dronecss.inputbox} name="" id="">
               <option value="">1</option>
               <option value="">2</option>
             </select>
           </div>
 
-          <p className="ml-3">self Id:</p>
+          <p style={{marginLeft:'0.75rem'}}>self Id:</p>
 
-          <div className="flex justify-between mt-2 ml-3 mr-4">
+          <div className={dronecss.inputcontainer}>
             <p>UAS ID</p>
-            <input className="bg-gray-400 w-56 " type="text" />
+            <input className={dronecss.inputbox} type="text" />
           </div>
 
-          <div className="flex justify-between mt-4 ml-3 mr-4">
+          <div className={dronecss.inputcontainer}>
             <p>UAS ID Type</p>
-            <select className="bg-gray-400 w-56 " name="" id="">
+            <select className={dronecss.inputbox} name="" id="">
               <option value="">1</option>
               <option value="">2</option>
             </select>
@@ -83,45 +87,47 @@ const DroneID = () => {
 
   return (
     <>
-      <div className="h-56 mb-2">
-        <fieldset className="border border-red-500 h-28 w-30 mx-4">
-          <legend className="ml-3">GCS GPS</legend>
-          <div className="flex">
+      <div style={{height:'14rem'}}>
+        <fieldset className={dronecss.fieldbox}>
+          <legend style={{marginLeft:'0.75rem'}}>GCS GPS</legend>
+          <div style={{display:'flex'}}>
             <select
               name=""
               id=""
-              className="mt-3 h-8 w-32 px-5 mx-3 bg-gray-400"
+              className={dronecss.selectbox1}
             >
               <option value="">1</option>
               <option value="">2</option>
             </select>
+
             <select
               name=""
               id=""
-              className="mt-3 h-8 w-32 px-5 mr-3 bg-gray-400"
+              className={dronecss.selectbox2}
             >
               <option value="">1</option>
               <option value="">2</option>
             </select>
-            <button className="bg-lime-500 h-8 px-1 mt-3 text-xs">
+
+            <button className={dronecss.selectboxbtn}>
               Connect Base GPS
             </button>
           </div>
-          <div className="flex ml-4 justify-between">
-            <p className="">Not Yet Started</p>
-            <div className="flex mr-28">
-            <input type="checkbox" name="" id="" className="mr-1" />
-            <p className="">Auto</p>
+          <div className={dronecss.selectboxcontainer}>
+            <p >Not Yet Started</p>
+            <div style={{display:'flex',marginRight:'7rem'}}>
+            <input type="checkbox" name="" id=""style={{marginRight:'0.25rem'}} />
+            <p >Auto</p>
             </div>
           </div>
         </fieldset>
 
-        <div className="flex h-24 w-30 mx-4 justify-between mt-3">
-          <div className="ml-3">
+        <div className={dronecss.childcontainer}>
+          <div style={{marginLeft:'0.75rem'}}>
             <ul>
-              <li className="flex items-center text-lg">
+              <li className={dronecss.list}>
                 <svg
-                  className="h-4 w-4 mr-1"
+                  className={dronecss.svgcrcl}
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle r="7" cx="7" cy="7" fill="gray" />
@@ -129,14 +135,14 @@ const DroneID = () => {
                 Remote ID
               </li>
             </ul>
-            <p className="ml-4">{"{Loading....}"}</p>
+            <p style={{marginLeft:'1rem'}}>{"{Loading....}"}</p>
           </div>
 
-          <div className="border border-green-500 h-20 px-4">
+          <div className={dronecss.childcontainer1}>
             <ul>
-              <li className="flex items-center text-lg">
+              <li className={dronecss.list}>
                 <svg
-                  className="h-4 w-4 mr-1"
+                  className={dronecss.svgcrcl}
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle r="7" cx="7" cy="7" fill="gray" />
@@ -144,19 +150,19 @@ const DroneID = () => {
                 RID Comms
               </li>
             </ul>
-            <ul className="flex">
-              <li className="flex items-center text-lg mr-3">
+            <ul style={{display:'flex'}}>
+              <li className={dronecss.list1}>
                 <svg
-                  className="h-4 w-4 mr-1"
+                  className={dronecss.svgcrcl}
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle r="7" cx="7" cy="7" fill="#d4af37" />
                 </svg>
                 GCS GPS
               </li>
-              <li className="flex items-center text-lg">
+              <li className={dronecss.list}>
                 <svg
-                  className="h-4 w-4 mr-1"
+                  className={dronecss.svgcrcl}
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle r="7" cx="7" cy="7" fill="gray" />
@@ -168,12 +174,12 @@ const DroneID = () => {
         </div>
 
         <div>
-          <div className="flex ml-3">
-            <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button1')}>Status</button>
-            <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button2')}>UAS ID</button>
-            <button className="bg-lime-400 mr-1" onClick={() => handleButtonClick('button3')}>Operations</button>
+          <div style={{display:'flex',marginLeft:'0.75rem'}}>
+            <button className={dronecss.btn} onClick={() => handleButtonClick('button1')}>Status</button>
+            <button className={dronecss.btn} onClick={() => handleButtonClick('button2')}>UAS ID</button>
+            <button className={dronecss.btn} onClick={() => handleButtonClick('button3')}>Operations</button>
           </div>
-          <div className="mx-3 border border-blue-400 w-30 h-52">{content}</div>
+          <div className={dronecss.contentcontainer}>{content}</div>
         </div>
       </div>
     </>

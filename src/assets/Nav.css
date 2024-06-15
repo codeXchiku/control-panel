@@ -1,0 +1,22 @@
+.navcontainer1{
+    /* Assuming this is applied to an element */
+    background-color: white;
+    overflow-x: auto;
+    height: 3.5rem;
+    color: black;
+}
+.navcontainer2{
+    display: flex;
+    align-items: center;
+    margin: 0.25rem 0 0.25rem 0.5rem;
+}
+.navchild{
+    font-size: 0.75rem;
+    padding-left: 0.5rem; padding-right: 0.5rem;
+    padding-top: 0.25rem; padding-bottom: 0.25rem;
+}
+a:focus {
+    outline: 2px solid black; 
+    /* Set the border color and width as desired */
+    /* Additional styles if needed */
+  }

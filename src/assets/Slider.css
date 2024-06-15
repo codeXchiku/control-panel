@@ -1,0 +1,9 @@
+/* Assuming this is applied to a parent container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }

@@ -19,15 +19,16 @@ import {
 } from "react-typescript-flight-indicators";
 
 const Gauges = () => {
+
   return (
     <>
     
-      <div className="flex flex-wrap h-56">
+      <div style={{display:'flex',flexWrap:'wrap',height:'14rem'}}>
         <div >
           <Variometer vario={(Math.random() - 0.5) * 4000}  />
         </div>
 
-        <div className="">
+        <div>
           <Speedometer value={130} fontFamily="squada-one">
             <Background />
             <Arc />

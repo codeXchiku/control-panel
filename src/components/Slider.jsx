@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import '../assets/Slider.css'
 const Slider = () => {
   const [value, setValue] = useState(0);
 
@@ -9,8 +9,8 @@ const Slider = () => {
   return (
     <>
       <div className="w-36">
-        <input type="range" min={0} max="100" className="range" step="5" value={value} onChange={handleChange} />
-        <div className="w-full flex justify-between text-xs px-3.5 ">
+        <input type="range" min={0} max="100" step="5" value={value} onChange={handleChange} />
+        <div className="container">
           <span>|</span>
           <span>|</span>
           <span>|</span>

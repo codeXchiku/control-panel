@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import './App.css'
 
 import Gyro from "./components/Gyro";
 import Navbar from "./components/Navbar";
@@ -25,7 +26,7 @@ export default function App() {
         
     <BrowserRouter>
     <Navbar/>
-    <div class="overflow-y-auto pt-3 bg-black text-white ">
+    <div className="homepage">
       <Routes>
         <Route path="/" element={<Quick/>}/>
         <Route path="/PayLoad" element={<PayLoad/>}/>
