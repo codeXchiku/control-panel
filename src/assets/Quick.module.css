@@ -1,0 +1,45 @@
+.childcontainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.text{
+    font-weight: 700;
+    text-align: center;
+}
+
+.alttext{
+    font-size: 6rem/* 96px */;
+    line-height: 1;
+    color: rgb(212, 34, 34);
+}
+
+.grotext{
+    font-size: 6rem/* 96px */;
+    line-height: 1;
+    color: rgb(251 146 60);
+}
+
+.disttext{
+    font-size: 6rem/* 96px */;
+    line-height: 1;
+    color: rgb(244 114 182 );
+}
+
+.yawtext{
+    font-size: 6rem/* 96px */;
+    line-height: 1;
+    color: rgb(74 222 128);
+}
+
+.vertext{
+    font-size: 6rem/* 96px */;
+    line-height: 1;
+    color: rgb(250 204 21);
+}
+
+.distext{
+    font-size: 6rem/* 96px */;
+    line-height: 1;
+    color: rgb(56 189 248);
+}
