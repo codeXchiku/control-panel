@@ -3,14 +3,14 @@ import React from 'react'
 const Scripts = () => {
   return (
     <>
-    <div className='ml-4 h-56'>
+    <div style={{marginLeft:'1rem',height:'14rem'}} >
       <p>Script Status:No Script Running</p>
       <p>Selected Script:None</p>
-      <div className='flex mb-4'>
-        <input type="checkbox" name="" id="" className='mr-1' />
+      <div style={{display:'flex',marginBottom:'1rem'}}>
+        <input type="checkbox" name="" id="" style={{marginRight:' 0.25rem'}}  />
         <p>Redirect Program Output</p>
       </div>
-      <button className='bg-lime-500 p-1'>Select Script</button>
+      <button style={{backgroundColor: 'rgb(132 204 22)',padding:'0.25rem'}}>Select Script</button>
     </div>
     </>
   )

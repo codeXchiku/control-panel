@@ -1,0 +1,44 @@
+.childcontainer{
+    margin-bottom: 0.75rem;
+    align-items: center;
+    display: flex;
+}
+
+.inputbox{
+    background-color: rgb(107 114 128);
+    margin-right: 0.5rem;
+    color: white;
+    width: 2.5rem;
+    height: 1.25rem;
+    font-size: 0.75rem/* 12px */;
+    line-height: 1rem;
+}
+
+.btn{
+    background-color: rgb(74 222 128);
+    margin-right: 0.5rem;
+    padding-left: 0.25rem/* 4px */;
+    padding-right: 0.25rem;
+}
+.paragraphtag{
+    margin-right: 0.5rem/* 8px */;
+    background-color: rgb(156 163 175);
+    color: white;
+    padding:0.125rem 1.5rem 0.125rem 1.5rem;
+}
+
+.btn1{
+    background-color: rgb(74 222 128);
+    margin-right: 0.5rem;
+    padding-left: 0.5rem/* 8px */;
+    padding-right: 0.5rem;
+}
+
+.paragraphtag1{
+    margin-right: 0.5rem/* 8px */;
+    background-color: rgb(156 163 175);
+    color: white;
+    padding:0.125rem 0.5rem 0.125rem 0.5rem;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem;
+}
