@@ -2,7 +2,7 @@ import React from 'react'
 
 const Status = () => {
   return (
-    <div className='h-56'>
+    <div style={{height:'14rem'}}>
         Status
     </div>
   )

@@ -1,76 +1,78 @@
 import React from "react";
+import transpondercss from '../assets/Transponder.module.css'
 
 const TransPonder = () => {
   return (
     <>
-      <div className="flex h-full">
-        <div className="grid mr-2 h-56 mb-2">
-          <button className="bg-green-400 mb-2 rounded-md border-4 border-black ">
+      <div style={{display:"flex"}}>
+        <div className={transpondercss.btncontainer}>
+          <button className={transpondercss.btn}>
             STBY
           </button>
-          <button className="bg-green-400 mb-2 rounded-md border-4 border-black">
+          <button className={transpondercss.btn}>
             ON
           </button>
-          <button className="bg-green-400 mb-2 rounded-md border-4 border-black">
+          <button className={transpondercss.btn}>
             ALT
           </button>
-          <button className="bg-green-400 mb-2 rounded-md border-4 border-black p-2">
+          <button style={{padding:' 0.5rem'}} className={transpondercss.btn}>
             IDENT
           </button>
         </div>
-        <div className="grid">
-          <div className="flex">
-            <div className="mr-2">
-              <div className="flex mb-2">
-                <p className="mr-2">Flight ID</p>
-                <input className="bg-gray-400 w-24" type="text" name="" id="" />
+        <div style={{display:"grid"}}>
+          <div style={{display:"flex"}}>
+
+            <div style={{marginRight:'0.5rem'}}>
+              <div style={{display:'flex',marginBottom:'0.5rem'}}>
+                <p style={{marginRight:'0.5rem'}}>Flight ID</p>
+                <input className={transpondercss.inputbox} type="text" name="" id="" />
               </div>
 
-              <div className="flex mb-2">
-                <p className="mr-2">Flight ID</p>
+              <div style={{display:'flex',marginBottom:'0.5rem'}}>
+                <p style={{marginRight:'0.5rem'}}>Flight ID</p>
                 <input
-                  className="bg-gray-400 py-2 w-24"
+                  className={transpondercss.inputbox2}
                   type="number"
                   name=""
                   id=""
                 />
               </div>
 
-              <div className="flex mb-2">
-                <p className="mr-2">Flight ID</p>
-                <input className="bg-gray-400 w-24" type="text" name="" id="" />
+              <div style={{display:'flex',marginBottom:'0.5rem'}}>
+                <p style={{marginRight:'0.5rem'}}>Flight ID</p>
+                <input className={transpondercss.inputbox} type="text" name="" id="" />
               </div>
 
-              <div className="flex mb-2">
-                <p className="mr-2">Flight ID</p>
-                <input className="bg-gray-400 w-24" type="text" name="" id="" />
+              <div style={{display:'flex',marginBottom:'0.5rem'}}>
+                <p style={{marginRight:'0.5rem'}}>Flight ID</p>
+                <input className={transpondercss.inputbox} type="text" name="" id="" />
               </div>
             </div>
 
-            <div className="bg-gray-400 h-36 px-2">
-              <div className="flex">
-                <input className="mr-2" type="checkbox" name="" id="" />
-                <p className="text-black">Maint. Req.</p>
+            <div className="bg-gray-400 h-36 px-2 text-black">
+              <div style={{display:"flex"}}>
+                <input style={{marginRight:'0.5rem'}} type="checkbox" name="" id="" />
+                <p>Maint. Req.</p>
               </div>
 
-              <div className="flex">
-                <input className="mr-2" type="checkbox" name="" id="" />
-                <p className="text-black">Maint. Req.</p>
+              <div style={{display:"flex"}}>
+                <input style={{marginRight:'0.5rem'}} type="checkbox" name="" id="" />
+                <p>Maint. Req.</p>
               </div>
 
-              <div className="flex">
-                <input className="mr-2" type="checkbox" name="" id="" />
-                <p className="text-black">Maint. Req.</p>
+              <div style={{display:"flex"}}>
+                <input style={{marginRight:'0.5rem'}} type="checkbox" name="" id="" />
+                <p>Maint. Req.</p>
               </div>
 
-              <div className="flex">
-                <input className="mr-2" type="checkbox" name="" id="" />
-                <p className="text-black">Maint. Req.</p>
+              <div style={{display:"flex"}}>
+                <input style={{marginRight:'0.5rem'}} type="checkbox" name="" id="" />
+                <p>Maint. Req.</p>
               </div>
 
-              <div className="flex">
-                <input className="mr-2" type="checkbox" name="" id="" />
-                <p className="text-black">Maint. Req.</p>
+              <div style={{display:"flex"}}>
+                <input style={{marginRight:'0.5rem'}} type="checkbox" name="" id="" />
+                <p>Maint. Req.</p>
               </div>
             </div>
           </div>
